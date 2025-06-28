@@ -30,7 +30,10 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker">
+            <Button 
+              className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker"
+              onClick={() => window.open('https://outlook.office365.com/owa/calendar/AddLayer@NETORGFT15142014.onmicrosoft.com/bookings/', '_blank')}
+            >
               Free Consultation
             </Button>
           </div>
@@ -52,7 +55,10 @@ const Header = () => {
               <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Services</a>
               <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">About</a>
               <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contact</a>
-              <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker w-full">
+              <Button 
+                className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker w-full"
+                onClick={() => window.open('https://outlook.office365.com/owa/calendar/AddLayer@NETORGFT15142014.onmicrosoft.com/bookings/', '_blank')}
+              >
                 Free Consultation
               </Button>
             </nav>

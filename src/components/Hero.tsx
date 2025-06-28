@@ -3,6 +3,13 @@ import { ArrowRight, Code, Layers, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-background via-card to-addlayer-green/5 pt-20">
       <div className="container mx-auto px-6">
@@ -29,6 +36,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker px-8 py-4 text-lg group"
+                onClick={() => scrollToSection('contact')}
               >
                 Start Project
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -37,6 +45,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-addlayer-green text-addlayer-green hover:bg-addlayer-green hover:text-addlayer-darker px-8 py-4 text-lg"
+                onClick={() => scrollToSection('services')}
               >
                 View Services
               </Button>

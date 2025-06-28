@@ -1,5 +1,5 @@
 
-import { Code, Database, Layers, Monitor, Shield, Zap } from 'lucide-react';
+import { Code, Database, Layers, Monitor, Shield, Zap, Cloud, Users, RefreshCw, Building } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
@@ -8,13 +8,37 @@ const Services = () => {
       icon: Code,
       title: 'Software Development',
       description: 'Custom web and mobile applications with the latest technologies and best practices.',
-      features: ['React & Node.js', 'REST APIs', 'Mobile Applications']
+      features: ['Full-Stack Development', 'REST APIs', 'Mobile Applications']
     },
     {
       icon: Layers,
       title: 'Systems Architecture',
       description: 'We design scalable and robust architectures that grow with your business.',
       features: ['Microservices', 'Cloud Architecture', 'DevOps']
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud Solutions',
+      description: 'From migration to optimization, we ensure seamless and scalable cloud integration for your business.',
+      features: ['Cloud Migration', 'AWS & Azure', 'Infrastructure Optimization']
+    },
+    {
+      icon: Users,
+      title: 'Consulting',
+      description: 'Build the right platform to outpace competition and scale confidently.',
+      features: ['Digital Strategy', 'Technology Assessment', 'Business Growth']
+    },
+    {
+      icon: RefreshCw,
+      title: 'Tech Refresh',
+      description: 'Build the right platform to outpace competition and scale confidently.',
+      features: ['Legacy Modernization', 'Technology Upgrade', 'System Migration']
+    },
+    {
+      icon: Building,
+      title: 'Tech Hub',
+      description: 'We not only craft bespoke applications for clients but also pioneer the development of innovative solutions.',
+      features: ['Innovation Lab', 'Custom Solutions', 'R&D Services']
     },
     {
       icon: Database,
