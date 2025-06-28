@@ -7,33 +7,37 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-addlayer-gradient rounded-lg"></div>
-            <span className="text-2xl font-bold text-addlayer-dark">AddLayer</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/55546d23-d100-49dc-a6b5-fe98deaa0e07.png" 
+              alt="AddLayer Logo" 
+              className="w-10 h-10"
+            />
+            <span className="text-2xl font-bold text-foreground">AddLayer</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-addlayer-green transition-colors">Inicio</a>
-            <a href="#services" className="text-gray-700 hover:text-addlayer-green transition-colors">Servicios</a>
-            <a href="#about" className="text-gray-700 hover:text-addlayer-green transition-colors">Nosotros</a>
-            <a href="#contact" className="text-gray-700 hover:text-addlayer-green transition-colors">Contacto</a>
+            <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Inicio</a>
+            <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Servicios</a>
+            <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">Nosotros</a>
+            <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contacto</a>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-white">
+            <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker">
               Consulta Gratuita
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -44,11 +48,11 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 hover:text-addlayer-green transition-colors">Inicio</a>
-              <a href="#services" className="text-gray-700 hover:text-addlayer-green transition-colors">Servicios</a>
-              <a href="#about" className="text-gray-700 hover:text-addlayer-green transition-colors">Nosotros</a>
-              <a href="#contact" className="text-gray-700 hover:text-addlayer-green transition-colors">Contacto</a>
-              <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-white w-full">
+              <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Inicio</a>
+              <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Servicios</a>
+              <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">Nosotros</a>
+              <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contacto</a>
+              <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker w-full">
                 Consulta Gratuita
               </Button>
             </nav>

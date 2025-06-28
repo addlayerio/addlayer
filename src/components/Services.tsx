@@ -43,13 +43,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-addlayer-dark mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Nuestros Servicios
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Conectamos cada capa de tu visión tecnológica con soluciones expertas 
             que impulsan tu negocio hacia el futuro digital.
           </p>
@@ -61,18 +61,18 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg"
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-background border-border shadow-lg hover:border-addlayer-green/50"
               >
                 <CardHeader className="text-center pb-4">
-                  <div className="w-16 h-16 bg-addlayer-green/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-addlayer-green/20 transition-colors">
+                  <div className="w-16 h-16 bg-addlayer-green/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-addlayer-green/30 transition-colors">
                     <Icon className="w-8 h-8 text-addlayer-green" />
                   </div>
-                  <CardTitle className="text-xl text-addlayer-dark group-hover:text-addlayer-green transition-colors">
+                  <CardTitle className="text-xl text-foreground group-hover:text-addlayer-green transition-colors">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <CardDescription className="text-gray-600 mb-6 leading-relaxed">
+                  <CardDescription className="text-muted-foreground mb-6 leading-relaxed">
                     {service.description}
                   </CardDescription>
                   <ul className="space-y-2">

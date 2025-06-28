@@ -9,42 +9,6 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 15% 15%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
-
-    --primary: 162 82% 65%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 220 15% 15%;
-
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 15% 45%;
-
-    --accent: 162 82% 65%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 220 15% 91%;
-    --input: 220 15% 91%;
-    --ring: 162 82% 65%;
-
-    --radius: 0.5rem;
-
-    --addlayer-green: 162 82% 65%;
-    --addlayer-dark: 220 15% 15%;
-    --addlayer-darker: 220 20% 8%;
-  }
-
-  .dark {
     --background: 220 20% 8%;
     --foreground: 0 0% 95%;
 
@@ -71,6 +35,42 @@ All colors MUST be HSL.
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;
+    --ring: 162 82% 65%;
+
+    --radius: 0.5rem;
+
+    --addlayer-green: 162 82% 65%;
+    --addlayer-dark: 220 15% 15%;
+    --addlayer-darker: 220 20% 8%;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 162 82% 65%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 15% 15%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 162 82% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 91%;
+    --input: 220 15% 91%;
     --ring: 162 82% 65%;
   }
 }
