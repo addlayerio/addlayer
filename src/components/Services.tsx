@@ -1,5 +1,5 @@
 
-import { Code, Database, Layers, Monitor, Shield, Zap, Cloud, Users, RefreshCw, Building } from 'lucide-react';
+import { Code, Database, Layers, Monitor, Shield, Zap, Cloud, Users, RefreshCw, Building, Brain, Microscope } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
@@ -39,6 +39,18 @@ const Services = () => {
       title: 'Tech Hub',
       description: 'We not only craft bespoke applications for clients but also pioneer the development of innovative solutions.',
       features: ['Innovation Lab', 'Custom Solutions', 'R&D Services']
+    },
+    {
+      icon: Brain,
+      title: 'Artificial Intelligence',
+      description: 'Leverage AI to transform your business processes and unlock new opportunities for growth.',
+      features: ['AI Strategy & Consulting', 'Natural Language Processing', 'Computer Vision']
+    },
+    {
+      icon: Microscope,
+      title: 'Machine Learning',
+      description: 'Implement intelligent systems that learn and adapt to improve your business outcomes.',
+      features: ['Predictive Analytics', 'Data Science', 'Model Development & Deployment']
     },
     {
       icon: Database,

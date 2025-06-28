@@ -13,7 +13,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/55546d23-d100-49dc-a6b5-fe98deaa0e07.png" 
+              src="/lovable-uploads/dbe22a69-a4ba-4276-8009-d785d64f8473.png" 
               alt="AddLayer Logo" 
               className="w-10 h-10"
             />
