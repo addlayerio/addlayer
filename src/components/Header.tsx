@@ -22,16 +22,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Inicio</a>
-            <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Servicios</a>
-            <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">Nosotros</a>
-            <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contacto</a>
+            <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Home</a>
+            <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Services</a>
+            <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">About</a>
+            <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contact</a>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker">
-              Consulta Gratuita
+              Free Consultation
             </Button>
           </div>
 
@@ -48,12 +48,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Inicio</a>
-              <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Servicios</a>
-              <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">Nosotros</a>
-              <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contacto</a>
+              <a href="#home" className="text-muted-foreground hover:text-addlayer-green transition-colors">Home</a>
+              <a href="#services" className="text-muted-foreground hover:text-addlayer-green transition-colors">Services</a>
+              <a href="#about" className="text-muted-foreground hover:text-addlayer-green transition-colors">About</a>
+              <a href="#contact" className="text-muted-foreground hover:text-addlayer-green transition-colors">Contact</a>
               <Button className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker w-full">
-                Consulta Gratuita
+                Free Consultation
               </Button>
             </nav>
           </div>

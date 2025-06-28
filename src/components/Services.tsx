@@ -6,38 +6,38 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: 'Desarrollo de Software',
-      description: 'Aplicaciones web y móviles personalizadas con las últimas tecnologías y mejores prácticas.',
-      features: ['React & Node.js', 'APIs REST', 'Aplicaciones Móviles']
+      title: 'Software Development',
+      description: 'Custom web and mobile applications with the latest technologies and best practices.',
+      features: ['React & Node.js', 'REST APIs', 'Mobile Applications']
     },
     {
       icon: Layers,
-      title: 'Arquitectura de Sistemas',
-      description: 'Diseñamos arquitecturas escalables y robustas que crecen con tu negocio.',
-      features: ['Microservicios', 'Cloud Architecture', 'DevOps']
+      title: 'Systems Architecture',
+      description: 'We design scalable and robust architectures that grow with your business.',
+      features: ['Microservices', 'Cloud Architecture', 'DevOps']
     },
     {
       icon: Database,
-      title: 'Gestión de Datos',
-      description: 'Soluciones completas para el manejo, análisis y visualización de datos empresariales.',
+      title: 'Data Management',
+      description: 'Complete solutions for handling, analyzing and visualizing enterprise data.',
       features: ['Big Data', 'Analytics', 'Business Intelligence']
     },
     {
       icon: Shield,
-      title: 'Ciberseguridad',
-      description: 'Protegemos tu infraestructura IT con soluciones de seguridad de vanguardia.',
-      features: ['Auditorías de Seguridad', 'Pentesting', 'Compliance']
+      title: 'Cybersecurity',
+      description: 'We protect your IT infrastructure with cutting-edge security solutions.',
+      features: ['Security Audits', 'Penetration Testing', 'Compliance']
     },
     {
       icon: Monitor,
-      title: 'Consultoría IT',
-      description: 'Asesoramiento estratégico para optimizar tu infraestructura tecnológica.',
-      features: ['Transformación Digital', 'IT Strategy', 'Process Optimization']
+      title: 'IT Consulting',
+      description: 'Strategic advisory to optimize your technological infrastructure.',
+      features: ['Digital Transformation', 'IT Strategy', 'Process Optimization']
     },
     {
       icon: Zap,
-      title: 'Automatización',
-      description: 'Automatizamos procesos para aumentar la eficiencia y reducir costos operativos.',
+      title: 'Automation',
+      description: 'We automate processes to increase efficiency and reduce operational costs.',
       features: ['RPA', 'CI/CD', 'Infrastructure as Code']
     }
   ];
@@ -47,11 +47,11 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Nuestros Servicios
+            Our Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conectamos cada capa de tu visión tecnológica con soluciones expertas 
-            que impulsan tu negocio hacia el futuro digital.
+            We connect every layer of your technological vision with expert solutions 
+            that drive your business towards the digital future.
           </p>
         </div>
 

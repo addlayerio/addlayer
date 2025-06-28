@@ -13,8 +13,8 @@ const Footer = () => {
               <span className="text-2xl font-bold">AddLayer</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Layers that connect your IT vision. Transformamos ideas en soluciones 
-              tecnológicas innovadoras que impulsan el crecimiento de tu negocio.
+              Layers that connect your IT vision. We transform ideas into 
+              innovative technological solutions that drive your business growth.
             </p>
             <div className="text-sm text-addlayer-green">
               LAYERS THAT CONNECT YOUR IT VISION
@@ -23,23 +23,23 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-addlayer-green">Servicios</h3>
+            <h3 className="text-lg font-semibold mb-4 text-addlayer-green">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-addlayer-green transition-colors">Desarrollo de Software</a></li>
-              <li><a href="#" className="hover:text-addlayer-green transition-colors">Arquitectura de Sistemas</a></li>
-              <li><a href="#" className="hover:text-addlayer-green transition-colors">Consultoría IT</a></li>
-              <li><a href="#" className="hover:text-addlayer-green transition-colors">Ciberseguridad</a></li>
+              <li><a href="#" className="hover:text-addlayer-green transition-colors">Software Development</a></li>
+              <li><a href="#" className="hover:text-addlayer-green transition-colors">Systems Architecture</a></li>
+              <li><a href="#" className="hover:text-addlayer-green transition-colors">IT Consulting</a></li>
+              <li><a href="#" className="hover:text-addlayer-green transition-colors">Cybersecurity</a></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-addlayer-green">Empresa</h3>
+            <h3 className="text-lg font-semibold mb-4 text-addlayer-green">Company</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#about" className="hover:text-addlayer-green transition-colors">Nosotros</a></li>
-              <li><a href="#" className="hover:text-addlayer-green transition-colors">Casos de Éxito</a></li>
+              <li><a href="#about" className="hover:text-addlayer-green transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-addlayer-green transition-colors">Success Stories</a></li>
               <li><a href="#" className="hover:text-addlayer-green transition-colors">Blog</a></li>
-              <li><a href="#contact" className="hover:text-addlayer-green transition-colors">Contacto</a></li>
+              <li><a href="#contact" className="hover:text-addlayer-green transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -47,14 +47,14 @@ const Footer = () => {
         <div className="border-t border-addlayer-green/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 AddLayer. Todos los derechos reservados.
+              © 2024 AddLayer. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-addlayer-green transition-colors text-sm">
-                Política de Privacidad
+                Privacy Policy
               </a>
               <a href="#" className="text-gray-400 hover:text-addlayer-green transition-colors text-sm">
-                Términos de Servicio
+                Terms of Service
               </a>
             </div>
           </div>

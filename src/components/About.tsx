@@ -5,23 +5,23 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Enfoque en Resultados',
-      description: 'Cada proyecto tiene objetivos claros y métricas de éxito definidas.'
+      title: 'Results-Focused',
+      description: 'Every project has clear objectives and defined success metrics.'
     },
     {
       icon: Lightbulb,
-      title: 'Innovación Constante',
-      description: 'Adoptamos las últimas tecnologías para mantenerte a la vanguardia.'
+      title: 'Constant Innovation',
+      description: 'We adopt the latest technologies to keep you at the forefront.'
     },
     {
       icon: Users,
-      title: 'Trabajo Colaborativo',
-      description: 'Trabajamos codo a codo contigo en cada etapa del proyecto.'
+      title: 'Collaborative Work',
+      description: 'We work side by side with you at every stage of the project.'
     },
     {
       icon: Award,
-      title: 'Calidad Garantizada',
-      description: 'Estándares de calidad enterprise en cada línea de código.'
+      title: 'Quality Guaranteed',
+      description: 'Enterprise-grade quality standards in every line of code.'
     }
   ];
 
@@ -33,18 +33,18 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Construimos el Futuro
-                <span className="text-addlayer-green"> Capa por Capa</span>
+                Building the Future
+                <span className="text-addlayer-green"> Layer by Layer</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                En AddLayer, entendemos que cada solución tecnológica exitosa se construye 
-                mediante capas interconectadas de expertise, innovación y dedicación. 
-                Somos tu socio estratégico en la transformación digital.
+                At AddLayer, we understand that every successful technological solution is built 
+                through interconnected layers of expertise, innovation and dedication. 
+                We are your strategic partner in digital transformation.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Desde startups disruptivas hasta empresas consolidadas, hemos ayudado a 
-                organizaciones de todos los tamaños a materializar su visión IT con 
-                soluciones robustas, escalables y orientadas al futuro.
+                From disruptive startups to established enterprises, we have helped 
+                organizations of all sizes materialize their IT vision with 
+                robust, scalable and future-oriented solutions.
               </p>
             </div>
 
@@ -74,19 +74,19 @@ const About = () => {
               {/* Layered design representing the company concept */}
               <div className="space-y-4">
                 <div className="h-20 bg-addlayer-gradient rounded-xl opacity-90 flex items-center justify-center">
-                  <span className="text-addlayer-darker font-bold text-lg">VISIÓN</span>
+                  <span className="text-addlayer-darker font-bold text-lg">VISION</span>
                 </div>
                 <div className="h-20 bg-addlayer-green/80 rounded-xl ml-8 flex items-center justify-center">
-                  <span className="text-addlayer-darker font-bold text-lg">ESTRATEGIA</span>
+                  <span className="text-addlayer-darker font-bold text-lg">STRATEGY</span>
                 </div>
                 <div className="h-20 bg-addlayer-green/60 rounded-xl ml-16 flex items-center justify-center">
-                  <span className="text-background font-bold text-lg">DESARROLLO</span>
+                  <span className="text-background font-bold text-lg">DEVELOPMENT</span>
                 </div>
                 <div className="h-20 bg-addlayer-green/40 rounded-xl ml-24 flex items-center justify-center">
-                  <span className="text-foreground font-bold text-lg">IMPLEMENTACIÓN</span>
+                  <span className="text-foreground font-bold text-lg">IMPLEMENTATION</span>
                 </div>
                 <div className="h-20 bg-addlayer-green/20 rounded-xl ml-32 flex items-center justify-center border border-addlayer-green/30">
-                  <span className="text-addlayer-green font-bold text-lg">ÉXITO</span>
+                  <span className="text-addlayer-green font-bold text-lg">SUCCESS</span>
                 </div>
               </div>
             </div>

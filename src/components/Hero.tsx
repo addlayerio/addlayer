@@ -21,8 +21,8 @@ const Hero = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Transformamos tu visión tecnológica en realidad. Desde desarrollo hasta arquitectura, 
-              construimos las capas que conectan tus ideas con soluciones innovadoras.
+              We transform your technological vision into reality. From development to architecture, 
+              we build the layers that connect your ideas with innovative solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -30,7 +30,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-addlayer-green hover:bg-addlayer-green/90 text-addlayer-darker px-8 py-4 text-lg group"
               >
-                Comenzar Proyecto
+                Start Project
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -38,7 +38,7 @@ const Hero = () => {
                 size="lg" 
                 className="border-addlayer-green text-addlayer-green hover:bg-addlayer-green hover:text-addlayer-darker px-8 py-4 text-lg"
               >
-                Ver Servicios
+                View Services
               </Button>
             </div>
 
@@ -46,15 +46,15 @@ const Hero = () => {
             <div className="flex gap-8 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-addlayer-green">50+</div>
-                <div className="text-sm text-muted-foreground">Proyectos</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-addlayer-green">5+</div>
-                <div className="text-sm text-muted-foreground">Años Experiencia</div>
+                <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-addlayer-green">100%</div>
-                <div className="text-sm text-muted-foreground">Satisfacción</div>
+                <div className="text-sm text-muted-foreground">Satisfaction</div>
               </div>
             </div>
           </div>
