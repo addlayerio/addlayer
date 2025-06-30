@@ -12,12 +12,19 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    const interval = setInterval(() => {
+    // Execute immediately
+    const removeLovableBadge = () => {
       const lovableBadge = document.getElementById("lovable-badge");
       if (lovableBadge) {
         lovableBadge.remove();
       }
-    }, 1000);
+    };
+    
+    // Run immediately
+    removeLovableBadge();
+    
+    // Then run every second
+    const interval = setInterval(removeLovableBadge, 1000);
 
     return () => clearInterval(interval);
   }, []);
