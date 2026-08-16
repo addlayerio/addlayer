@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,19 +11,306 @@
     <meta property="og:title" content="AddLayer - Layers that Connect Your IT Vision" />
     <meta property="og:description" content="Innovative technological solutions that transform your IT vision into reality" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="/assets/img/addlayer-wordmark.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@addlayer" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
+    <meta name="twitter:image" content="/assets/img/addlayer-wordmark.png" />
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#101318" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="assets/img/logo.png" alt="AddLayer Logo" class="brand-logo" />
+          <span class="brand-name">AddLayer</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+          <button class="btn btn-primary" data-external="booking">Free Consultation</button>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="icon icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="nav-mobile" id="nav-mobile">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button class="btn btn-primary btn-full" data-external="booking">Free Consultation</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-heading">
+              <h1>Add<span class="text-green">Layer</span></h1>
+              <div class="hero-subtitle">
+                <span>LAYERS THAT</span>
+                <span>CONNECT YOUR</span>
+                <span class="text-green strong">IT VISION</span>
+              </div>
+            </div>
+
+            <p class="hero-lead">
+              We transform your technological vision into reality. From development to architecture,
+              we build the layers that connect your ideas with innovative solutions.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary btn-lg group" data-scroll="contact">
+                Start Project
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+              <button class="btn btn-outline btn-lg" data-scroll="services">
+                View Services
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="layer-mock">
+              <div class="layer-mock-back"></div>
+              <div class="layer-mock-mid"></div>
+              <div class="layer-mock-front">
+                <div class="layer-mock-icons">
+                  <div class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  </div>
+                  <div class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+                  </div>
+                  <div class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                  </div>
+                  <div class="icon-tile icon-tile-glow">AL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Our Services</h2>
+            <p>We connect every layer of your technological vision with expert solutions
+              that drive your business towards the digital future.</p>
+          </div>
+
+          <div class="services-grid" id="services-grid"></div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-content">
+            <div>
+              <h2>Building the Future<span class="text-green"> Layer by Layer</span></h2>
+              <p>At AddLayer, we understand that every successful technological solution is built
+                through interconnected layers of expertise, innovation and dedication.
+                We are your strategic partner in digital transformation.</p>
+              <p>From disruptive startups to established enterprises, we have helped
+                organizations of all sizes materialize their IT vision with
+                robust, scalable and future-oriented solutions.</p>
+            </div>
+
+            <div class="values-grid" id="values-grid"></div>
+          </div>
+
+          <div class="about-visual">
+            <div class="layer-stack">
+              <div class="layer-bar layer-bar-1"><span>VISION</span></div>
+              <div class="layer-bar layer-bar-2"><span>STRATEGY</span></div>
+              <div class="layer-bar layer-bar-3"><span>DEVELOPMENT</span></div>
+              <div class="layer-bar layer-bar-4"><span>IMPLEMENTATION</span></div>
+              <div class="layer-bar layer-bar-5"><span>SUCCESS</span></div>
+            </div>
+            <div class="deco-circle deco-circle-1"></div>
+            <div class="deco-circle deco-circle-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Ready to <span class="text-green">Connect</span> Your Vision?</h2>
+            <p>Let's start a conversation about how we can transform your ideas
+              into innovative technological solutions.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div>
+                <h3>Let's Talk About Your Project</h3>
+                <p>Every great technological solution begins with a conversation.
+                  Share your vision with us and discover how we can
+                  build your digital future together.</p>
+              </div>
+
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </div>
+                  <div>
+                    <h4>Email</h4>
+                    <p>contact@addlayer.io</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Phone</h4>
+                    <p>+36 320 617 2262</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <h4>Office</h4>
+                    <p>United States<br />651 N Broad St, Suite 201<br />Middletown, Delaware 19709</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <h3>Free Consultation</h3>
+              <form id="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tell us about your project</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Describe your vision, objectives and how we can help you..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full btn-lg group">
+                  Send Consultation
+                  <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-mark"></div>
+              <span>AddLayer</span>
+            </div>
+            <p>Layers that connect your IT vision. We transform ideas into
+              innovative technological solutions that drive your business growth.</p>
+            <div class="footer-tagline">LAYERS THAT CONNECT YOUR IT VISION</div>
+          </div>
+
+          <div>
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Software Development</a></li>
+              <li><a href="#services">Systems Architecture</a></li>
+              <li><a href="#services">IT Consulting</a></li>
+              <li><a href="#services">Cybersecurity</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Success Stories</a></li>
+              <li><a href="#services">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 AddLayer. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

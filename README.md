@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# AddLayer — static site
 
-## Project info
+Plain HTML/CSS/JS replica of the AddLayer corporate site (design, colors and
+functionality). No build step, no framework, no dependencies — just static
+files.
 
-**URL**: https://lovable.dev/projects/7892ce17-0f40-4d7e-9a6d-c3f30caaa913
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/7892ce17-0f40-4d7e-9a6d-c3f30caaa913) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+index.html
+404.html
+robots.txt
+favicon.ico
+assets/
+  css/style.css
+  js/main.js
+  img/
 ```
 
-**Edit a file directly in GitHub**
+## Run locally
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Any static file server works, e.g.:
 
-**Use GitHub Codespaces**
+```sh
+npx serve .
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deploy to Cloudflare Pages
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7892ce17-0f40-4d7e-9a6d-c3f30caaa913) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Go to the Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages**.
+2. Either connect this Git repo (build command: none, output directory: `/`),
+   or use **Direct Upload** and drag this whole folder in.
+3. Cloudflare Pages will publish it at `<project>.pages.dev` (and you can
+   attach a custom domain afterwards).
