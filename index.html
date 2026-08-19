@@ -36,13 +36,17 @@
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <img src="assets/img/logo.png" alt="AddLayer Logo" class="brand-logo" />
+          <svg class="brand-logo" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" role="img" aria-label="AddLayer">
+            <rect x="4.4" y="4.4" width="20.8" height="20.8" rx="2.2"></rect>
+            <rect x="14" y="14" width="20.8" height="20.8" rx="2.2"></rect>
+          </svg>
           <span class="brand-name">AddLayer</span>
         </div>
 
         <nav class="nav-desktop">
           <a href="#home">Home</a>
-          <a href="#services">Services</a>
+          <a href="#products">Open Source</a>
+          <a href="#services">Consulting</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -60,7 +64,8 @@
       <div class="nav-mobile" id="nav-mobile">
         <nav>
           <a href="#home">Home</a>
-          <a href="#services">Services</a>
+          <a href="#products">Open Source</a>
+          <a href="#services">Consulting</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <button class="btn btn-primary btn-full" data-external="booking">Free Consultation</button>
@@ -73,65 +78,143 @@
       <section id="home" class="hero">
         <div class="container hero-grid">
           <div class="hero-content">
-            <div class="hero-heading">
-              <h1>Add<span class="text-green">Layer</span></h1>
-              <div class="hero-subtitle">
-                <span>LAYERS THAT</span>
-                <span>CONNECT YOUR</span>
-                <span class="text-green strong">IT VISION</span>
-              </div>
+            <div class="hero-eyebrow">
+              <span class="hero-wordmark">AddLayer</span>
+              <span class="hero-eyebrow-sep">/</span>
+              <span>open source + consulting</span>
             </div>
 
+            <h1 class="hero-headline">
+              Open-source AI infrastructure.<br>
+              Custom software, shipped right.
+            </h1>
+
             <p class="hero-lead">
-              We transform your technological vision into reality. From development to architecture,
-              we build the layers that connect your ideas with innovative solutions.
+              Kravn and Verbora are live proof of what we build in the open.
+              Everything else — implementation, custom software, full projects —
+              is the software factory side: same team, same quality bar.
             </p>
 
             <div class="hero-actions">
-              <button class="btn btn-primary btn-lg group" data-scroll="contact">
-                Start Project
+              <button class="btn btn-primary btn-lg group" data-scroll="products">
+                Explore Open Source
                 <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
               <button class="btn btn-outline btn-lg" data-scroll="services">
-                View Services
+                Start a Project
               </button>
             </div>
 
             <div class="hero-stats">
               <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Open-source products</div>
+              </div>
+              <div class="stat">
                 <div class="stat-value">50+</div>
-                <div class="stat-label">Projects</div>
+                <div class="stat-label">Projects delivered</div>
               </div>
               <div class="stat">
                 <div class="stat-value">5+</div>
-                <div class="stat-label">Years Experience</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">Satisfaction</div>
+                <div class="stat-label">Years building software</div>
               </div>
             </div>
           </div>
 
           <div class="hero-visual">
-            <div class="layer-mock">
-              <div class="layer-mock-back"></div>
-              <div class="layer-mock-mid"></div>
-              <div class="layer-mock-front">
-                <div class="layer-mock-icons">
-                  <div class="icon-tile">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                  </div>
-                  <div class="icon-tile">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
-                  </div>
-                  <div class="icon-tile">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
-                  </div>
-                  <div class="icon-tile icon-tile-glow">AL</div>
-                </div>
+            <div class="terminal">
+              <div class="frame-chrome"><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span></div>
+              <div class="terminal-body">
+                <div class="term-line"><span class="term-prompt">$</span> addlayer --status</div>
+                <div class="term-group-label">open source</div>
+                <div class="term-row"><span class="term-name">kravn.ai</span><span class="term-badge term-badge-live">live</span></div>
+                <div class="term-row"><span class="term-name">verbora.dev</span><span class="term-badge term-badge-live">live</span></div>
+                <div class="term-group-label">consulting</div>
+                <div class="term-row"><span class="term-name">software factory</span><span class="term-badge term-badge-live">available</span></div>
+                <div class="term-row"><span class="term-name">enterprise support</span><span class="term-badge term-badge-live">available</span></div>
+                <div class="term-line term-cursor"><span class="term-prompt">$</span> <span class="term-caret"></span></div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="products">
+        <div class="container">
+          <div class="section-heading">
+            <div class="section-index">01 / open source</div>
+            <h2>Open Source</h2>
+            <p>We build our own products first, in the open. Kravn and Verbora
+              are the proof — everything else, including client work, is built
+              on the same layers.</p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-head">
+                <span class="product-icon product-icon-kravn">
+                  <svg class="icon" viewBox="0 0 1254 1254" fill="currentColor">
+                    <g transform="translate(0,1254) scale(0.1,-0.1)">
+                      <path d="M8250 10283 c-293 -39 -577 -176 -794 -384 -159 -151 -282 -337 -382 -574 -135 -321 -354 -879 -347 -885 4 -4 31 -15 58 -25 94 -34 290 -137 400 -210 310 -207 526 -478 630 -789 51 -152 66 -236 72 -397 7 -172 -6 -298 -47 -458 -78 -311 -203 -518 -415 -690 -140 -114 -242 -177 -960 -598 -187 -110 -428 -252 -535 -315 -278 -164 -1327 -779 -1881 -1102 l-207 -121 -761 -749 c-418 -412 -760 -751 -758 -752 1 -1 220 42 487 96 l486 97 249 145 c138 80 430 250 650 378 220 129 623 364 895 522 399 233 828 468 854 468 2 0 7 -54 11 -120 8 -119 8 -121 39 -147 81 -68 1036 -927 1036 -932 0 -3 -64 -40 -142 -81 -194 -102 -583 -315 -693 -379 l-90 -53 60 6 c144 14 575 37 865 46 604 19 1693 11 1988 -16 l67 -6 -25 22 c-51 43 -308 160 -470 214 -177 58 -461 132 -735 190 -93 20 -180 40 -191 44 -12 4 -195 207 -407 452 l-385 445 547 550 c885 889 1077 1091 1303 1367 396 482 607 859 713 1273 45 174 59 296 58 500 0 246 -31 400 -152 775 -103 317 -119 418 -86 544 67 258 261 403 623 467 112 20 157 23 382 21 174 -1 304 -7 408 -19 83 -10 152 -17 152 -15 0 11 -36 85 -62 127 -119 189 -290 331 -552 456 -195 93 -407 157 -727 219 -44 8 -68 21 -115 61 -129 110 -287 201 -449 259 -164 58 -242 71 -445 75 -102 2 -201 1 -220 -2z m628 -513 c150 -22 279 -40 287 -40 21 0 19 -17 -2 -23 -10 -3 -102 -43 -206 -90 l-187 -86 -118 136 c-64 74 -119 139 -120 144 -2 6 13 7 35 4 21 -3 161 -24 311 -45z"/>
+                      <path d="M4169 5768 c-1291 -1294 -2346 -2354 -2345 -2355 4 -5 166 27 291 57 266 65 544 167 925 342 748 343 3244 1656 3955 2081 246 147 410 285 504 426 303 449 231 1007 -182 1397 -182 172 -437 311 -696 379 -51 14 -96 25 -100 25 -3 0 -1062 -1059 -2352 -2352z"/>
+                    </g>
+                  </svg>
+                </span>
+                <div>
+                  <h3>Kravn</h3>
+                  <p class="product-tag">AI agent orchestration platform</p>
+                </div>
+              </div>
+
+              <p class="product-description">
+                Spin up specialized AI agents — one for security triage, one for ops,
+                one for support — each with its own model, tools and knowledge base.
+                Cron-scheduled automation or a team chat workspace, running entirely
+                inside your own Kubernetes cluster. Your data never leaves.
+              </p>
+
+              <ul class="product-chips">
+                <li>Self-hosted</li>
+                <li>Kubernetes-native</li>
+                <li>Apache 2.0 core</li>
+              </ul>
+
+              <a class="btn btn-outline product-link group" href="https://kravn.ai" target="_blank" rel="noopener noreferrer">
+                Visit kravn.ai
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-head">
+                <span class="product-icon product-icon-img">
+                  <img src="assets/img/verbora-logo.svg" alt="Verbora logo" />
+                </span>
+                <div>
+                  <h3>Verbora</h3>
+                  <p class="product-tag">Rust-native NLP toolkit</p>
+                </div>
+              </div>
+
+              <p class="product-description">
+                A high-performance natural language processing toolkit for Rust —
+                105 public APIs across seventeen crates covering tokenization,
+                stemming, phonetics, string distance, TF-IDF, sentiment and more,
+                with behavior locked down by a 526,341-case regression suite.
+              </p>
+
+              <ul class="product-chips">
+                <li>105 APIs</li>
+                <li>17 crates</li>
+                <li>526k+ regression tests</li>
+              </ul>
+
+              <a class="btn btn-outline product-link group" href="https://verbora.dev" target="_blank" rel="noopener noreferrer">
+                Visit verbora.dev
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -140,12 +223,14 @@
       <section id="services" class="services">
         <div class="container">
           <div class="section-heading">
-            <h2>Our Services</h2>
-            <p>We connect every layer of your technological vision with expert solutions
-              that drive your business towards the digital future.</p>
+            <div class="section-index">02 / consulting</div>
+            <h2>Consulting &amp; Software Factory</h2>
+            <p>Full-cycle development, architecture, AI/ML, cloud, and — yes —
+              Kravn running inside your own infrastructure if you want it.
+              Not a side project: it's how the lights stay on.</p>
           </div>
 
-          <div class="services-grid" id="services-grid"></div>
+          <div class="services-list" id="services-grid"></div>
         </div>
       </section>
 
@@ -272,7 +357,10 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="footer-logo">
-              <div class="footer-logo-mark"></div>
+              <svg class="footer-logo-mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" role="img" aria-label="AddLayer">
+                <rect x="4.4" y="4.4" width="20.8" height="20.8" rx="2.2"></rect>
+                <rect x="14" y="14" width="20.8" height="20.8" rx="2.2"></rect>
+              </svg>
               <span>AddLayer</span>
             </div>
             <p>Layers that connect your IT vision. We transform ideas into
@@ -281,12 +369,12 @@
           </div>
 
           <div>
-            <h3>Services</h3>
+            <h3>Consulting</h3>
             <ul>
+              <li><a href="#services">Open Source Deployment</a></li>
               <li><a href="#services">Software Development</a></li>
               <li><a href="#services">Systems Architecture</a></li>
               <li><a href="#services">IT Consulting</a></li>
-              <li><a href="#services">Cybersecurity</a></li>
             </ul>
           </div>
 

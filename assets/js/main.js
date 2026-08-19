@@ -63,10 +63,14 @@
     ),
     award: svg(
       '<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/>'
+    ),
+    box: svg(
+      '<path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/>'
     )
   };
 
   var services = [
+    { icon: "box", title: "Open Source Deployment", description: "Bring Kravn, Verbora, or anything else in our open-source stack into your own company — we install it, customize it, and keep it running.", features: ["Self-hosted setup", "Custom integration", "Ongoing support"] },
     { icon: "code", title: "Software Development", description: "Custom web and mobile applications with the latest technologies and best practices.", features: ["Full-Stack Development", "REST APIs", "Mobile Applications"] },
     { icon: "layers", title: "Systems Architecture", description: "We design scalable and robust architectures that grow with your business.", features: ["Microservices", "Cloud Architecture", "DevOps"] },
     { icon: "cloud", title: "Cloud Solutions", description: "From migration to optimization, we ensure seamless and scalable cloud integration for your business.", features: ["Cloud Migration", "AWS & Azure", "Infrastructure Optimization"] },
@@ -93,17 +97,21 @@
     if (!grid) return;
     grid.innerHTML = services
       .map(function (s) {
-        var features = s.features
+        var tags = s.features
           .map(function (f) {
-            return "<li>• " + f + "</li>";
+            return "<li>" + f + "</li>";
           })
           .join("");
         return (
-          '<div class="service-card">' +
-          '<div class="service-icon">' + icons[s.icon] + "</div>" +
+          '<div class="service-row">' +
+          '<div class="service-row-icon">' + icons[s.icon] + "</div>" +
+          '<div class="service-row-body">' +
+          '<div class="service-row-main">' +
           "<h3>" + s.title + "</h3>" +
           "<p>" + s.description + "</p>" +
-          '<ul class="service-features">' + features + "</ul>" +
+          "</div>" +
+          '<ul class="service-row-tags">' + tags + "</ul>" +
+          "</div>" +
           "</div>"
         );
       })
